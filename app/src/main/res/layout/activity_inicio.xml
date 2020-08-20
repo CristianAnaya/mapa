@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context=".Actividades.InicioActivity">
+
+    <include
+        android:id="@+id/app_bar_main"
+        layout="@layout/app_bar_main"
+
+        />
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_main">
+
+
+        <ListView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:dividerHeight="10dp"
+            android:divider="@android:color/transparent"
+            android:id="@+id/listTrabajo">
+
+        </ListView>
+
+        <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/md_black_1000"
+        app:itemTextColor="@color/md_black_1000"
+        app:headerLayout="@layout/nav_header_main"
+
+        app:itemTextAppearance="@style/NavigationDrawerStyle"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

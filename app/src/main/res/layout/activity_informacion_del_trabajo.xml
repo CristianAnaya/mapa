@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    tools:context=".Actividades.InformacionDelTrabajo">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="70dp"
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/bg_gris"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="260dp"
+                    android:background="@drawable/shape_prioridad"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/txtPrioridad"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:textSize="60dp"
+                        android:padding="5dp"/>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+
+
+                    <TextView
+                        style="@style/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="@string/cod_odt"/>
+
+                    <TextView
+                        android:id="@+id/txtOdtInformacion"
+                        style="@style/texto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+
+
+
+
+                    <TextView
+                        style="@style/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:text="@string/atr_total_a_trabajar"/>
+
+                    <TextView
+                        android:id="@+id/txtTrabajosRealizados"
+                        style="@style/texto"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        style="@style/titulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:text="@string/str_fecha_inicio_programada"/>
+
+                    <TextView
+                        android:id="@+id/txtFechaInicioPlanificada"
+                        style="@style/texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        style="@style/titulo"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/str_fecha_fin_programada"/>
+
+                    <TextView
+                        android:id="@+id/txtFechaFinPlanificada"
+                        style="@style/texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/md_white_1000"
+                android:gravity="bottom"
+                android:layout_marginTop="120dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnIniciarTrabajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/background_boton_fin_descargo"
+                    android:text="@string/odt_iniciar_trabajo"/>
+
+                <Button
+                    android:id="@+id/btnDetalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btn_inhabilitado"
+                    android:text="@string/odt_detalle"/>
+
+                <Button
+                    android:id="@+id/btnVerMapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btn_inhabilitado"
+                    android:text="@string/odt_ver_mapa"/>
+
+
+
+                <Button
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/odt_fin_del_descargo"
+                    android:enabled="false"
+                    android:textColor="@color/boton_disabled"
+                    android:background="@drawable/btn_disabled"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

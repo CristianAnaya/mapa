@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Información"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/md_black_1000"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitulo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:layout_span="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_image"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lblCodigoArbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <TextView
+                    android:id="@+id/txtNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:text="Nombre del elemento"
+                    style="@style/texto"/>
+
+                <TextView
+                    android:id="@+id/lblTipoPredio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+                <TextView
+                    android:id="@+id/txtDireccionElemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:text="Calle 65#34b-25"
+                    style="@style/texto"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <RadioGroup
+                    android:id="@+id/rgbtnEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rbtnRealizado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realizado"/>
+
+                    <RadioButton
+                        android:id="@+id/rbtnEnEspera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En espera"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Observación"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <TextView
+                    android:id="@+id/txtObservacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:text="Aqui va la observacion que se le hizo al elemento"
+                    style="@style/texto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de trabajo"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <TextView
+                    android:id="@+id/txtFechaElemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:text="30/05/2020"
+                    style="@style/texto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selección"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <Spinner
+                    android:id="@+id/spTipoPoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prioridad"
+                    style="@style/titulo"
+                    android:textSize="@dimen/lbl_info_elemento_planificador"/>
+
+                <TextView
+                    android:id="@+id/txtPrioridad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:text="Alta"
+                    style="@style/texto"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/md_white_1000"
+                android:gravity="bottom"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnIniciarTrabajoElemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/background_boton_fin_descargo"
+                    android:onClick="IniciarTrabajo"
+                    android:text="@string/odt_iniciar_trabajo"/>
+
+                <Button
+                    android:id="@+id/btnDetallesElemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/md_white_1000"
+                    android:onClick="Detalles"
+                    android:text="@string/odt_detalle"/>
+
+                <Button
+                    android:id="@+id/btnRealizarFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/md_white_1000"
+                    android:onClick="verMapa"
+                    android:text="@string/odt_ver_mapa"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

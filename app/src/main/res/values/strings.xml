@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Generic</string>
+    <string name="str_login">Iniciar sesión</string>
+    <string name="usuario">Usuario</string>
+
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="str_empresa">Empresa</string>
+
+    <string name="configuracion_ip">newpodaserver.smartseals.co</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="str_salir_app">"Vuelve a presionar para salir"</string>
+    <string name="boton_positivo" translatable="false">Aceptar</string>
+    <string name="dialogo_cerrar_sesion">¿Está seguro que desea cerrar la sesión del usuario</string>
+    <string name="red_mensaje">No tienes conexión a internet</string>
+    <string name="configuracion_puerto"></string>
+    <string name="backup_fin_ok">Backup finalizado</string>
+    <string name="backup_fin_no">No fue posible crear un backup</string>
+    <string name="enable_gps_title" translatable="false">GPS desactivado</string>
+    <string name="no_gps">El sistema GPS esta desactivado, ¿Desea activarlo?</string>
+    <string name="boton_negativo" translatable="false">Cancelar</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="str_codigo_odt">Código ODT</string>
+    <string name="str_descargo">Descargo</string>
+    <string name="atr_total_a_trabajar">Total a trabajar</string>
+    <string name="str_fecha_inicio_programada">Fecha inicio planificada</string>
+    <string name="str_fecha_fin_programada">Fecha fin planificada</string>
+    <string name="db_ok">Base de datos copiada</string>
+    <string name="db_no">Error al copiar base de datos, puede que el archivo no exista.</string>
+
+    <string name="error_invalid_password">Esta contraseña es demasiado corta</string>
+    <string name="login_activity_loginfail_text_both">El usuario o contrasena no es válido</string>
+
+    <string name="login_activity_loginfail_text_pwonly">Haz ingresado una contrasena errada o tu cuenta ha cambiado</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="channel_name_00">Segundo plano</string>
+
+    <string name="channel_name_01">Primer plano</string>
+    <string name="channel_description_00">Notificaiones de Smart Seals Poda en segundo plano</string>
+    <string name="channel_description_01">Notificaiones de Smart Seals Poda en primer plano</string>
+    <string name="creando_backup">Creando backup&#8230;</string>
+    <string name="enable_gps_message" translatable="false">La aplicación no puede continuar con
+        el GPS desactivado. Activelo por favor!</string>
+
+    <string name="str_boton_aceptar" translatable="false">Aceptar</string>
+
+
+    <!--Cadenas de texto para los botones-->
+    <string name="str_boton_cancelar" translatable="false">Cancelar</string>
+    <string name="cod_odt">Codigo ODT</string>
+    <string name="odt_iniciar_trabajo">Iniciar trabajo</string>
+    <string name="odt_detalle">Detalle</string>
+    <string name="odt_ver_mapa">Ver mapa</string>
+    <string name="odt_finalizar_trabajo">Finalizar trabajo</string>
+    <string name="odt_fin_del_descargo">Finalizar trabajo</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string-array name="empresa">
+        <item>Seleccione</item>
+        <item>Caribe Mar</item>
+        <item>Caribe Sol</item>
+    </string-array>
+    <string name="title_activity_maps_elementos">Map</string>
+</resources>
